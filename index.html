@@ -22,28 +22,27 @@
 
     <!-- SEO STRATEGY -->
     <title id="meta-title">Glucavit Officiel | Équilibre Glycémique & Vitalité | Boutique Europe</title>
-    <meta name="description" content="Découvrez Glucavit. Formule avancée pour l'équilibre du sucre dans le sang et la santé métabolique. Expédition rapide : France, Suède, Autriche, Allemagne, Suisse.">
-    <meta name="keywords" content="Glucavit, Glucavit France, Glucavit Allemagne, Glucavit Suisse, Glucavit Autriche, acheter Glucavit, glycémie naturelle">
+    <meta name="description" content="Aidez votre métabolisme à retrouver son équilibre naturellement avec Glucavit. Formule végétale avancée pour l'énergie et la glycémie.">
     
     <!-- OPEN GRAPH -->
     <meta property="og:type" content="product">
-    <meta property="og:title" content="Glucavit: La Formule Métabolique Ultime">
+    <meta property="og:title" content="Glucavit: Soutien Métabolique Intelligent">
     <meta property="og:image" content="images/glucavit.png">
 
-    <!-- JSON-LD STRUCTURED DATA -->
+    <!-- JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "Glucavit",
       "image": ["images/glucavit.png"],
-      "description": "Formule de soutien métabolique conçue pour maintenir des niveaux de sucre sains.",
-      "sku": "GLUCA-EU-2026",
+      "description": "Formule végétale avancée pour soutenir le métabolisme et l'équilibre glycémique.",
+      "sku": "GLUCA-EU-V2",
       "brand": { "@type": "Brand", "name": "Glucavit" },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "reviewCount": "21540"
+        "reviewCount": "5000"
       },
       "offers": {
         "@type": "Offer",
@@ -62,11 +61,11 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .hero-section-bg { position: relative; background-color: #f0fff4; overflow: hidden; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .hero-section-bg { position: relative; background-color: #f0fff4; }
         .hero-overlay-img {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background-image: linear-gradient(rgba(240, 255, 244, 0.85), rgba(240, 255, 244, 0.85)), url('https://img.freepik.com/free-photo/scientist-working-modern-laboratory_23-2148902500.jpg');
+            background-image: linear-gradient(rgba(240, 255, 244, 0.9), rgba(255, 255, 255, 1)), url('https://img.freepik.com/free-photo/scientist-working-modern-laboratory_23-2148902500.jpg');
             background-size: cover; background-position: center; z-index: 0;
         }
         .hero-container { position: relative; z-index: 10; }
@@ -77,11 +76,11 @@
         .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
         .modal-open { overflow: hidden; }
-        .prose h4 { font-weight: 700; margin-top: 1.2rem; color: #111; border-bottom: 1px solid #eee; padding-bottom: 4px; font-size: 0.9rem; }
-        .prose p, .prose li { font-size: 0.85rem; color: #4b5563; line-height: 1.5; margin-bottom: 0.5rem; }
+        .prose h4 { font-weight: 700; margin-top: 1.2rem; color: #111; border-bottom: 1px solid #eee; padding-bottom: 4px; font-size: 0.9rem; text-transform: uppercase; }
+        .prose p, .prose li { font-size: 0.85rem; color: #4b5563; line-height: 1.6; margin-bottom: 0.6rem; }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="text-gray-800 bg-white">
 
     <header class="sticky top-0 bg-white/95 backdrop-blur-md z-40 border-b border-gray-100">
         <div class="container mx-auto flex justify-between items-center p-4">
@@ -90,124 +89,221 @@
                 <span class="text-xl font-extrabold tracking-tighter text-emerald-900">Gluca<span class="text-emerald-500">vit</span></span>
             </div>
             <div class="hidden md:flex items-center gap-4 text-xs font-bold text-gray-400 uppercase tracking-widest">
-                <span id="txt-hcp">Approuvé par les Experts</span>
+                <span>Normes Européennes</span>
                 <span class="h-1 w-1 bg-gray-300 rounded-full"></span>
-                <span id="txt-bio">Bio-Optimisé</span>
+                <span>Qualité ISO 22000</span>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="hero-section-bg">
+        <!-- HERO -->
+        <section class="hero-section-bg overflow-hidden">
             <div class="hero-overlay-img"></div>
-            <div class="container mx-auto px-6 py-10 md:py-20 hero-container">
+            <div class="container mx-auto px-6 py-12 md:py-24 hero-container">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 items-center">
                     
                     <div class="text-center md:text-left reveal">
-                        <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-2 shadow-sm">
-                            <span class="font-bold text-sm" id="txt-rating">4.9/5 Satisfaction Clinique</span>
-                            <div class="flex text-amber-500"><i data-feather="star" class="w-4 h-4 fill-current"></i><i data-feather="star" class="w-4 h-4 fill-current"></i><i data-feather="star" class="w-4 h-4 fill-current"></i><i data-feather="star" class="w-4 h-4 fill-current"></i><i data-feather="star" class="w-4 h-4 fill-current"></i></div>
+                        <div class="mb-6 inline-flex items-center gap-2 bg-white/80 px-4 py-1.5 rounded-full border border-emerald-100 shadow-sm">
+                            <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Solution Naturelle</span>
                         </div>
 
-                        <h1 class="text-4xl sm:text-6xl font-extrabold mb-5 leading-tight text-slate-900" id="txt-hero-title">
-                            Équilibrez votre <br class="hidden sm:block">Santé Métabolique <br>
-                            <span class="text-emerald-700 underline decoration-emerald-200 decoration-4">Formule Glucavit</span>
+                        <h1 class="text-4xl sm:text-6xl font-extrabold mb-6 leading-tight text-slate-900">
+                            Aidez votre métabolisme à retrouver son <span class="text-emerald-600">équilibre</span> naturellement.
                         </h1>
                         
-                        <div class="my-6 md:hidden">
-                            <img src="images/glucavit.png" alt="Glucavit Bottle" class="mx-auto w-full max-w-xs product-shadow">
-                        </div>
+                        <p class="text-lg text-slate-600 mb-8 max-w-lg">Glucavit est une formule végétale avancée conçue pour un soutien métabolique intelligent.</p>
 
-                        <div class="w-full max-w-md glass-panel rounded-2xl p-6 mb-8 text-left border-emerald-100">
+                        <div class="w-full max-w-md glass-panel rounded-3xl p-6 mb-10 shadow-sm border-emerald-50) text-left">
                             <ul class="space-y-4">
                                 <li class="flex items-start gap-3">
                                     <div class="brand-bg rounded-full p-1 mt-0.5"><i data-feather="check" class="text-white w-3 h-3"></i></div>
-                                    <span class="font-semibold text-sm sm:text-base" id="benefit-1">Soutient des niveaux de sucre sains</span>
+                                    <span class="font-bold text-slate-800">Un métabolisme plus actif</span>
                                 </li>
                                 <li class="flex items-start gap-3">
                                     <div class="brand-bg rounded-full p-1 mt-0.5"><i data-feather="check" class="text-white w-3 h-3"></i></div>
-                                    <span class="font-semibold text-sm sm:text-base" id="benefit-2">Améliore la sensibilité à l'insuline</span>
+                                    <span class="font-bold text-slate-800">Une énergie stable toute la journée</span>
                                 </li>
                                 <li class="flex items-start gap-3">
                                     <div class="brand-bg rounded-full p-1 mt-0.5"><i data-feather="check" class="text-white w-3 h-3"></i></div>
-                                    <span class="font-semibold text-sm sm:text-base" id="benefit-3">Énergie stable sans crash</span>
+                                    <span class="font-bold text-slate-800">Une meilleure gestion du sucre</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div class="brand-bg rounded-full p-1 mt-0.5"><i data-feather="check" class="text-white w-3 h-3"></i></div>
+                                    <span class="font-bold text-slate-800">Une sensation de légèreté digestive</span>
                                 </li>
                             </ul>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-4 items-center justify-center md:justify-start">
+                            <a href="#order-now" class="w-full sm:w-auto px-8 py-4 brand-bg text-white font-extrabold rounded-2xl shadow-xl hover:bg-emerald-700 transition-all text-center">COMMENCER MON PROGRAMME</a>
+                            <div class="text-xs font-bold text-slate-400 uppercase tracking-widest">Seulement 1,22 € / jour</div>
                         </div>
                     </div>
 
                     <div class="hidden md:flex justify-center items-center reveal">
-                        <img src="images/glucavit.png" alt="Glucavit Product" class="w-full max-w-md product-shadow transform hover:scale-105 transition duration-500">
+                        <div class="relative">
+                            <div class="absolute -inset-10 bg-emerald-500/10 blur-[100px] rounded-full"></div>
+                            <img src="images/glucavit.png" alt="Glucavit Bottle" class="relative w-full max-w-md product-shadow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEMATIC SECTION -->
+        <section class="py-20 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto text-center reveal">
+                    <h2 class="text-3xl font-extrabold mb-8 text-slate-900">Pourquoi votre corps résiste aujourd'hui ?</h2>
+                    <p class="text-lg text-slate-600 mb-12">Avec l’âge, le stress et l’alimentation moderne, votre métabolisme ralentit. Ce n'est pas un problème de volonté, c'est un <span class="text-emerald-600 font-bold">déséquilibre interne</span>.</p>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                        <div class="p-4 bg-white rounded-2xl shadow-sm border border-slate-100">
+                            <div class="text-emerald-500 mb-2 flex justify-center"><i data-feather="trending-down"></i></div>
+                            <p class="text-xs font-bold text-slate-800">Ralentissement métabolique</p>
+                        </div>
+                        <div class="p-4 bg-white rounded-2xl shadow-sm border border-slate-100">
+                            <div class="text-emerald-500 mb-2 flex justify-center"><i data-feather="activity"></i></div>
+                            <p class="text-xs font-bold text-slate-800">Glycémie instable</p>
+                        </div>
+                        <div class="p-4 bg-white rounded-2xl shadow-sm border border-slate-100">
+                            <div class="text-emerald-500 mb-2 flex justify-center"><i data-feather="alert-circle"></i></div>
+                            <p class="text-xs font-bold text-slate-800">Fringales fréquentes</p>
+                        </div>
+                        <div class="p-4 bg-white rounded-2xl shadow-sm border border-slate-100">
+                            <div class="text-emerald-500 mb-2 flex justify-center"><i data-feather="battery"></i></div>
+                            <p class="text-xs font-bold text-slate-800">Fatigue installée</p>
+                        </div>
+                        <div class="p-4 bg-white rounded-2xl shadow-sm border border-slate-100 col-span-2 md:col-span-1">
+                            <div class="text-emerald-500 mb-2 flex justify-center"><i data-feather="wind"></i></div>
+                            <p class="text-xs font-bold text-slate-800">Ventre gonflé</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INGREDIENTS SOLUTION -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div class="reveal order-2 md:order-1">
+                        <h2 class="text-3xl font-extrabold mb-6">La solution : soutenir votre corps — pas le forcer.</h2>
+                        <p class="text-slate-600 mb-8 leading-relaxed">Glucavit associe des plantes ancestrales et des actifs modernes pour activer naturellement la combustion et retrouver une énergie plus stable, progressivement et durablement.</p>
+                        
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">🌿</span>
+                                <span class="font-bold text-slate-800">Thé vert</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">🌿</span>
+                                <span class="font-bold text-slate-800">Ginseng</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">🌿</span>
+                                <span class="font-bold text-slate-800">Berbérine</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">🌿</span>
+                                <span class="font-bold text-slate-800">Gingembre</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">🌿</span>
+                                <span class="font-bold text-slate-800">Cannelle</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">🌿</span>
+                                <span class="font-bold text-slate-800">Vinaigre de cidre</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal order-1 md:order-2 flex justify-center">
+                        <img src="images/glucavit.png" alt="Glucavit Solution" class="w-full max-w-sm product-shadow">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="py-20 bg-emerald-950 text-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-center text-3xl font-extrabold mb-12">⭐ 4,9 / 5 – Plus de 5 000 clients en Europe</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-8 bg-white/5 rounded-3xl border border-white/10 italic">
+                        <p class="mb-4 text-lg">“Après des années d’échecs, j’ai enfin retrouvé une sensation de contrôle.”</p>
+                        <p class="font-bold text-emerald-400">— Sophie, Paris</p>
+                    </div>
+                    <div class="p-8 bg-white/5 rounded-3xl border border-white/10 italic">
+                        <p class="mb-4 text-lg">“Je me sens plus légère, plus énergique, sans effets indésirables.”</p>
+                        <p class="font-bold text-emerald-400">— Camille, Lyon</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ORDER NOW / COUNTRY SELECTOR -->
+        <section id="order-now" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <div class="reveal max-w-xl mx-auto">
+                    <h2 class="text-3xl font-extrabold mb-4">Commandez aujourd'hui</h2>
+                    <p class="text-slate-500 mb-8 uppercase tracking-widest font-bold text-sm">Sélectionnez votre destination d'expédition</p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+                        <a href="#" class="p-5 brand-bg text-white font-extrabold rounded-2xl shadow-lg hover:bg-emerald-700 transition-all flex items-center justify-center gap-2">France <i data-feather="chevron-right"></i></a>
+                        <a href="#" class="p-5 brand-bg text-white font-extrabold rounded-2xl shadow-lg hover:bg-emerald-700 transition-all flex items-center justify-center gap-2">Suède <i data-feather="chevron-right"></i></a>
+                        <a href="#" class="p-5 brand-bg text-white font-extrabold rounded-2xl shadow-lg hover:bg-emerald-700 transition-all flex items-center justify-center gap-2">Autriche <i data-feather="chevron-right"></i></a>
+                        <a href="#" class="p-5 brand-bg text-white font-extrabold rounded-2xl shadow-lg hover:bg-emerald-700 transition-all flex items-center justify-center gap-2">Allemagne <i data-feather="chevron-right"></i></a>
+                        <a href="#" class="p-5 brand-bg text-white font-extrabold rounded-2xl shadow-lg hover:bg-emerald-700 transition-all flex items-center justify-center gap-2 sm:col-span-2">Suisse <i data-feather="chevron-right"></i></a>
                     </div>
 
-                    <div class="flex flex-col gap-3 mt-4 w-full max-w-md reveal">
-                        <p class="text-xs font-bold brand-text uppercase tracking-widest text-center md:text-left" id="txt-select-country">Sélectionnez la destination d'expédition :</p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            <a href="#" class="flex items-center justify-center brand-bg hover:bg-emerald-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg">France</a>
-                            <a href="#" class="flex items-center justify-center brand-bg hover:bg-emerald-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg">Suède</a>
-                            <a href="#" class="flex items-center justify-center brand-bg hover:bg-emerald-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg">Autriche</a>
-                            <a href="#" class="flex items-center justify-center brand-bg hover:bg-emerald-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg">Allemagne</a>
-                            <a href="#" class="flex items-center justify-center brand-bg hover:bg-emerald-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg">Suisse</a>
-                        </div>
-                        <div class="mt-4 flex justify-center md:justify-start gap-4 opacity-60">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" class="h-4" alt="Visa">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" class="h-6" alt="Mastercard">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" class="h-4" alt="Paypal">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Klarna_Logo.svg" class="h-4" alt="Klarna">
-                        </div>
+                    <div class="flex justify-center gap-4 opacity-50 grayscale">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" class="h-4" alt="Visa">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" class="h-6" alt="Mastercard">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" class="h-4" alt="Paypal">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Klarna_Logo.svg" class="h-4" alt="Klarna">
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-slate-900 text-slate-300 py-16 border-t border-slate-800">
-        <div class="container mx-auto px-4 text-center">
+    <footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800 text-xs">
+        <div class="container mx-auto px-6 text-center">
             <div class="mb-8 flex justify-center items-center gap-2">
-                <img src="images/glucavit-logo.svg" alt="Glucavit" class="h-6 brightness-0 invert opacity-80">
+                <img src="images/glucavit-logo.svg" alt="Glucavit" class="h-6 brightness-0 invert opacity-60">
                 <span class="text-xl font-extrabold text-white">Gluca<span class="text-emerald-500">vit</span></span>
             </div>
             
-            <p class="font-medium text-white mb-2">&copy; 2026 Glucavit Labs. Tous droits réservés.</p>
-            <div class="inline-flex items-center gap-2 bg-slate-800/50 px-3 py-1 rounded-full mb-8">
-                <i data-feather="shield" class="text-emerald-400 w-3 h-3"></i>
-                <span class="text-xs text-slate-400" id="txt-iso">Installations certifiées ISO 22000</span>
-            </div>
-            
-            <div class="mb-10 text-[11px] space-y-1 max-w-2xl mx-auto opacity-70">
-                <p class="text-slate-200 font-bold uppercase tracking-wider mb-2">Informations Corporatives</p>
-                <p>Distribué par Bio-Vitality Europe SL</p>
-                <p>Support Europe : Rue de la Loi 200, 1000 Bruxelles, Belgique</p>
-                <p>Email: support@glucavit.com | Ligne Prioritaire: +33 (0) 800 123 456</p>
-            </div>
-            
-            <div class="flex justify-center flex-wrap gap-4 md:gap-8 mb-10 text-xs font-bold uppercase tracking-widest text-slate-400">
-                <button onclick="openModal('terms')" class="hover:text-emerald-400 transition-colors" id="btn-terms">Conditions Générales</button>
-                <button onclick="openModal('privacy')" class="hover:text-emerald-400 transition-colors" id="btn-privacy">Confidentialité</button>
-                <button onclick="openModal('shipping')" class="hover:text-emerald-400 transition-colors" id="btn-ship">Livraison & Retours</button>
-                <a href="https://support.glucavit.com/hc/requests/new" target="_blank" class="hover:text-emerald-400 transition-colors" id="btn-contact">Contact</a>
+            <p class="text-slate-500 mb-8 max-w-2xl mx-auto leading-relaxed">
+                <strong>CLAUSE DE NON-RESPONSABILITÉ :</strong> Ces déclarations n'ont pas été évaluées par l'Agence Européenne des Médicaments (EMA). Ce produit n'est pas destiné à diagnostiquer, traiter, guérir ou prévenir une maladie. Glucavit est un complément alimentaire conçu pour être utilisé conjointement avec un mode de vie sain.
+            </p>
+
+            <div class="flex justify-center flex-wrap gap-6 mb-10 font-bold uppercase tracking-widest text-slate-500">
+                <button onclick="openModal('terms')" class="hover:text-emerald-400">Conditions Générales</button>
+                <button onclick="openModal('privacy')" class="hover:text-emerald-400">Confidentialité</button>
+                <button onclick="openModal('shipping')" class="hover:text-emerald-400">Livraison</button>
+                <a href="https://support.glucavit.com/hc/requests/new" target="_blank" class="hover:text-emerald-400">Contact</a>
             </div>
 
-            <div class="border-t border-slate-800 pt-8 mt-4 text-[10px] text-slate-500 max-w-4xl mx-auto space-y-4 text-center">
-                <p id="fda-disclaimer"><strong>AVIS IMPORTANT :</strong> Ces déclarations n'ont pas été évaluées par l'Agence Européenne des Médicaments (EMA). Ce produit n'est pas destiné à diagnostiquer, traiter, guérir ou prévenir une maladie.</p>
-                <p id="fda-disclaimer-2">Consultez un professionnel de santé avant de commencer toute nouvelle supplémentation, surtout si vous suivez un traitement médical.</p>
-            </div>
+            <p>&copy; 2026 Glucavit Labs. Haur B.V, Amsterdam. STR.VERT CONSULTANTS LTD, Chypre.</p>
         </div>
     </footer>
 
     <!-- MODAL SYSTEM -->
     <div id="policy-modal" class="fixed inset-0 z-[100] hidden" role="dialog" aria-modal="true">
-        <div class="fixed inset-0 bg-slate-900/95 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div class="fixed inset-0 bg-slate-900/98 backdrop-blur-sm" onclick="closeModal()"></div>
         <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4">
-                <div class="relative bg-white rounded-3xl shadow-2xl w-full max-w-4xl max-h-[85vh] flex flex-col overflow-hidden">
+                <div class="relative bg-white rounded-3xl shadow-2xl w-full max-w-4xl max-h-[90vh] flex flex-col overflow-hidden">
                     <div class="px-6 py-4 border-b flex justify-between items-center bg-gray-50 sticky top-0 z-20">
-                        <h3 class="text-xs font-black text-slate-900 uppercase tracking-widest" id="modal-title">POLITIQUE</h3>
+                        <h3 class="text-xs font-black text-slate-900 uppercase tracking-widest" id="modal-title">DOCUMENTS OFFICIELS</h3>
                         <button onclick="closeModal()" class="p-2 hover:bg-gray-200 rounded-full"><i data-feather="x" class="h-5 w-5"></i></button>
                     </div>
-                    <div class="p-8 overflow-y-auto bg-white flex-1 prose max-w-none" id="modal-content-area"></div>
+                    <div class="p-10 overflow-y-auto bg-white flex-1 prose max-w-none text-left" id="modal-content-area"></div>
                     <div class="px-6 py-4 border-t bg-gray-50 flex justify-end">
-                        <button onclick="closeModal()" class="px-8 py-3 rounded-xl bg-slate-900 text-xs font-bold text-white uppercase tracking-widest" id="btn-close">Fermer</button>
+                        <button onclick="closeModal()" class="px-8 py-3 rounded-xl bg-slate-900 text-xs font-bold text-white uppercase tracking-widest">Fermer</button>
                     </div>
                 </div>
             </div>
@@ -217,7 +313,6 @@
     <script>
         feather.replace();
 
-        // Reveal logic
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
             reveals.forEach(el => {
@@ -230,97 +325,48 @@
         window.addEventListener("load", reveal);
         reveal();
 
-        // Language Mapping
-        const translations = {
-            'pt': {
-                'txt-hcp': 'Aprovado por Especialistas',
-                'txt-bio': 'Bio-Otimizado',
-                'txt-rating': '4.9/5 Satisfação Clínica',
-                'txt-hero-title': 'Equilibre a sua <br class="hidden sm:block">Saúde Metabólica <br> <span class="text-emerald-700 underline decoration-emerald-200 decoration-4">Fórmula Glucavit</span>',
-                'benefit-1': 'Suporta níveis saudáveis de açúcar',
-                'benefit-2': 'Melhora a sensibilidade à insulina',
-                'benefit-3': 'Energia estável sem quebras',
-                'txt-select-country': 'Selecione o destino de envio:',
-                'txt-iso': 'Instalações certificadas ISO 22000',
-                'btn-terms': 'Termos Gerais',
-                'btn-privacy': 'Privacidade',
-                'btn-ship': 'Envio e Devoluções',
-                'btn-close': 'Fechar'
-            },
-            'de': {
-                'txt-hcp': 'Expertengeprüft',
-                'txt-bio': 'Bio-Optimiert',
-                'txt-rating': '4.9/5 Klinische Zufriedenheit',
-                'txt-hero-title': 'Bringen Sie Ihren <br class="hidden sm:block">Stoffwechsel ins Gleichgewicht <br> <span class="text-emerald-700 underline decoration-emerald-200 decoration-4">Glucavit-Formel</span>',
-                'benefit-1': 'Unterstützt gesunden Blutzuckerspiegel',
-                'benefit-2': 'Verbessert die Insulinsensitivität',
-                'benefit-3': 'Stabile Energie ohne Abstürze',
-                'txt-select-country': 'Versandziel auswählen:',
-                'txt-iso': 'ISO 22000 zertifizierte Anlagen',
-                'btn-terms': 'AGB',
-                'btn-privacy': 'Datenschutz',
-                'btn-ship': 'Versand & Rückgabe',
-                'btn-close': 'Schließen'
-            },
-            'sv': {
-                'txt-hcp': 'Expertgodkänd',
-                'txt-bio': 'Bio-Optimerad',
-                'txt-rating': '4.9/5 Klinisk Nöjdhet',
-                'txt-hero-title': 'Balansera din <br class="hidden sm:block">Metaboliska Hälsa <br> <span class="text-emerald-700 underline decoration-emerald-200 decoration-4">Glucavit Formula</span>',
-                'benefit-1': 'Stöder hälsosamma sockernivåer',
-                'benefit-2': 'Förbättrar insulinkänslighet',
-                'benefit-3': 'Stabil energi utan kraschar',
-                'txt-select-country': 'Välj leveransdestination:',
-                'txt-iso': 'ISO 22000-certifierade anläggningar',
-                'btn-terms': 'Allmänna Villkor',
-                'btn-privacy': 'Integritet',
-                'btn-ship': 'Frakt & Retur',
-                'btn-close': 'Stäng'
-            }
-        };
-
-        const userLang = navigator.language.split('-')[0];
-        if (translations[userLang]) {
-            Object.keys(translations[userLang]).forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.innerHTML = translations[userLang][id];
-            });
-        }
-
         const modalData = {
             privacy: {
-                title: "Politique de Confidentialité - 24/10/2025",
+                title: "Politique de Confidentialité - Dernière mise à jour : 24 octobre 2025",
                 content: `
+                    <p>Cette Politique définit les pratiques de Haur B.V concernant la collecte, l'utilisation et la divulgation de vos informations personnelles sur glucavit.com.</p>
                     <h4>1. Informations Personnelles que Nous Collectons</h4>
-                    <p>Nous collectons votre nom, adresses, numéro de téléphone, e-mail, ainsi que les détails de paiement nécessaires. Nous traitons également des informations techniques (IP, navigateur) pour assurer la sécurité.</p>
+                    <p>Nous collectons votre nom, adresses de livraison, numéro de téléphone, e-mail et informations de paiement. Nous traitons également des données techniques comme votre adresse IP.</p>
                     <h4>2. Comment Nous Utilisons Vos Informations</h4>
-                    <p>Nous utilisons vos données pour exécuter notre contrat (traitement des commandes), pour la gestion des risques (fraude), et pour le marketing si vous y avez consenti explicitement. Les données de transaction sont conservées pendant 10 ans.</p>
+                    <p>Nous traitons vos données pour exécuter notre contrat (traitement des paiements, exécution et suivi de vos commandes via le vendeur STR.VERT CONSULTANTS LTD). Ce traitement est fondé sur l'Art. 6(1)(b) du RGPD. Les données relatives aux transactions sont conservées pendant 10 ans.</p>
                     <h4>3. Partage des Informations</h4>
-                    <p>Vos informations peuvent être partagées avec STR.VERT CONSULTANTS LTD (le vendeur) pour l'expédition, ainsi qu'avec des prestataires de paiement sécurisés.</p>
+                    <p>Nous partageons vos données avec le vendeur pour l'expédition et avec des prestataires de paiement sécurisés. Toute divulgation est effectuée selon le principe de minimisation des données.</p>
                     <h4>4. Vos Droits</h4>
-                    <p>Conformément au RGPD, vous avez un droit d'accès, de rectification, de suppression, et d'opposition. Contactez-nous pour exercer ces droits.</p>
+                    <p>Vous disposez d'un droit d'accès, de rectification, de suppression, de limitation et d'opposition au traitement de vos données conformément au RGPD. Pour exercer ces droits : https://support.glucavit.com/hc/requests/new.</p>
                 `
             },
             terms: {
-                title: "Conditions Générales - 24/10/2025",
+                title: "Conditions Générales - Dernière mise à jour : 24 octobre 2025",
                 content: `
                     <h4>1. Généralités</h4>
-                    <p>Opérateur : Haur B.V (Amsterdam). Vendeur : STR.VERT CONSULTANTS LTD (Chypre). Nous agissons en tant qu'intermédiaire.</p>
+                    <p>Haur B.V. est une société de droit néerlandais enregistrée à Amsterdam (RSIN : 867612939). Le Vendeur est STR.VERT CONSULTANTS LTD (Chypre). L'Opérateur de la Plateforme agit uniquement en tant qu'intermédiaire.</p>
                     <h4>3. Pas de Conseil Médical</h4>
-                    <p>Les informations sur ce site ne constituent pas un avis médical. Consultez toujours un médecin avant d'utiliser des suppléments. Ce produit n'est pas destiné à diagnostiquer ou traiter des maladies.</p>
+                    <p>Le Site Web ne fournit pas de conseils médicaux. Les informations sur les Produits n'ont pas été évaluées par les autorités pour le diagnostic ou le traitement de maladies. Consultez toujours un médecin avant d'utiliser des compléments.</p>
                     <h4>5. Commandes et Paiements</h4>
-                    <p>En effectuant une transaction, vous nous autorisez à débiter le montant. En cas d'échec, des tentatives répétées peuvent être effectuées pendant 30 jours.</p>
-                    <h4>6. Services d'Abonnement</h4>
-                    <p>Les abonnements génèrent des commandes automatiques. Annulation possible via le compte ou support 48h avant la facturation.</p>
+                    <p>En initiant une transaction, vous nous autorisez à débiter le montant total. Si le paiement échoue, vous nous autorisez à tenter automatiquement de traiter le débit pendant une période de 30 jours.</p>
+                    <h4>8. Retours et Remboursements</h4>
+                    <p>Vous avez le droit de retourner un Produit pour un remboursement dans les 30 jours suivant la livraison, à condition qu'il soit <strong>entièrement non ouvert</strong> et dans son emballage d'origine.</p>
                 `
             },
             shipping: {
-                title: "Livraison & Retours",
+                title: "Expédition et Retours - Politique Officielle",
                 content: `
-                    <h4>7. Expédition</h4>
-                    <p>Délai de traitement : 1-3 jours. Livraison : 2-14 jours ouvrables selon la destination (Allemagne: DHL/Hermes, France: La Poste, Suisse: Swiss Post).</p>
-                    <h4>8. Retours et Remboursements</h4>
-                    <p>Droit d'annulation sous 1 heure après commande. Retour possible sous 30 jours pour les produits <strong>non ouverts</strong> et dans leur état d'origine. Les frais de retour sont à la charge du client.</p>
+                    <h4>Expédition</h4>
+                    <p>Les commandes sont traitées sous 1 à 3 jours ouvrables. Délais estimés :</p>
+                    <ul>
+                        <li><strong>Allemagne :</strong> 4-7 jours (DHL/Hermes)</li>
+                        <li><strong>France :</strong> 4-8 jours (La Poste)</li>
+                        <li><strong>Suède :</strong> 6-10 jours (PostNord)</li>
+                        <li><strong>Autriche :</strong> 5-9 jours (Österreichische Post)</li>
+                        <li><strong>Suisse :</strong> 5-8 jours (Swiss Post)</li>
+                    </ul>
+                    <h4>Retours</h4>
+                    <p>Les retours doivent être effectués à l'adresse désignée après avoir rempli le formulaire officiel. Les frais d'expédition de retour sont à la charge exclusive de l'utilisateur.</p>
                 `
             }
         };
